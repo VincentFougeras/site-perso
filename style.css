@@ -1,0 +1,602 @@
+/* GENERAL */
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('Polices/Aaargh-webfont.eot');
+    src: url('Polices/Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Polices/Aaargh-webfont.woff') format('woff'),
+         url('Polices/Aaargh-webfont.ttf') format('truetype'),
+         url('Polices/Aaargh-webfont.svg#aaarghnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+	background-image : url("Images/bg.jpg");
+    background-color : #4aa1bb;
+    background-attachment: fixed;
+	font-family : Roboto, sans;
+    font-size: 1em;
+	margin:0;
+}
+li
+{
+	list-style : square url("Images/list.png");
+}
+
+/* Menu de navigation */
+nav
+{
+	position : fixed;
+	top:0;
+    text-align : center;
+	width : 100%;
+    background-color : rgba(23, 92, 119, 0.9);
+    box-shadow : 0 0 20px rgba(50,50,50,0.7);
+    z-index : 999;
+}
+nav ul
+{
+    list-style-type: none;
+	margin : 0;
+	padding : 0;
+}
+
+nav p
+{
+	display : inline-block;
+    margin : 0;
+    font-family : "Trebuchet MS";
+    font-size : 1.25em;
+    padding : 15px 0;
+}
+
+nav a
+{
+    padding : 20px;
+	color : white;
+	text-decoration : none;
+}
+
+nav img {
+    position : relative;
+    top : 3px;
+}
+nav p:hover img
+{
+    opacity: 0.7;
+}
+
+nav a:hover
+{
+    color : #9abbbb;
+}
+
+.navButton
+{
+    color : white;
+    display : none;
+}
+.navButton:hover
+{
+    color : #9abbbb;
+    cursor : pointer;
+}
+
+.navDrop
+{
+    display : none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align : center;
+	width : 100%;
+}
+.navDrop p
+{
+    padding : 15px 0;
+}
+.navDrop a
+{
+    padding : 15px;
+    color : #29768d;
+}
+.show
+{
+    display : block;
+}
+
+@media all and (max-width: 850px) {
+    .navButton
+    {
+        display: inline-block;
+    }
+    .largeS
+    {
+        display : none;
+    }
+
+}
+
+/* Page principale*/
+#bloc_page article
+{
+    width: 80%;
+    max-width : 900px;
+	margin : auto;
+    padding : 20px;
+    padding-top : 40px;
+    padding-bottom : 40px;
+	min-width : 300px;
+}
+
+#apropos article
+{
+    padding-top : 60px;
+}
+
+section
+{
+	background-color : white;
+}
+
+section p
+{
+	text-align: left;
+}
+
+article
+{
+	margin-left : 20px;
+	margin-right : 20px;
+}
+
+h2
+{
+	font-family : 'Trebuchet MS';
+	font-size : 1.55em;
+}
+
+.carre
+{
+	margin-bottom : 4px;
+	margin-right : 15px;
+	margin-left : 18px;
+}
+
+li
+{
+    margin: 7px;
+}
+
+a
+{
+    color : #29768d;
+}
+
+/* Titres avec image de fond */
+#bgcompetences
+{
+    background-image : url("Images/comp.jpg");
+}
+#bgprojets
+{
+    background-image : url("Images/projet.jpg");
+}
+#bgexperience
+{
+    background-image : url("Images/exp.jpg");
+}
+#bgcompetences, #bgprojets, #bgexperience
+{
+    background-color : #4aa1bb;
+    padding : 150px;
+    padding-left : 0;
+    padding-right : 0;
+    background-attachment: fixed;
+}
+section
+{
+    padding-top : 0;
+    padding-left : 0;
+    padding-right : 0;
+}
+
+/* Entete de la page*/
+header
+{
+	color : white;
+	font-style : normal;
+    margin-top : 220px;
+    margin-bottom : 200px;
+    z-index : 0;
+    text-align : center;
+}
+
+h1
+{
+	font-size : 3.2em;
+	font-family : aaarghnormal, 'Trebuchet MS', sans;
+	margin-bottom : 0;
+}
+
+header a
+{
+	color : white;
+	text-decoration : none;
+}
+
+nav span
+{
+	color : white;
+	text-decoration : none;
+}
+
+#etudiant
+{
+	margin-top : 0;
+	margin-left : 100px;
+	font-size : 1.5em;
+	font-family : aaarghnormal, 'Trebuchet MS', sans;
+    font-style : italic;
+}
+
+header .icons a
+{
+    margin-right : 7px;
+    margin-left : 7px;
+}
+
+header .icons img
+{
+    width : 35px;
+}
+
+/* Couleurs des sections */
+.blocpdf, #contact
+{
+    background-color : #29768d;
+}
+section
+{
+	background-color : #F3F3F3;
+}
+
+section h1, section h2
+{
+	color : #29768d;
+}
+
+#contact h1, #contact h2, #competences h1, #etudes h1, #projets h1, #experience h1
+{
+	color : white;
+}
+
+#contact p
+{
+    color : white;
+}
+
+/* Pied de page */
+footer
+{
+    font-size: 0.8em;
+    margin-top : 0;
+    margin-bottom : 0;
+    padding-top : 5px;
+    padding-bottom : 5px;
+    text-align : center;
+    color : white;
+    /*background-color : rgba(0,0,0,0.2);*/
+    background-color: rgb(46, 46, 46);
+}
+footer a
+{
+    color : white;
+}
+footer p {
+    margin-top : 5px;
+    margin-bottom : 5px;
+}
+.footer-copyright {
+    font-size : 1.2em;
+    display : block;
+    margin-top : 10px;
+}
+
+
+
+@media all and (min-width: 1200px) {
+    #bgcompetences h1, #bgprojets h1, #bgexperience h1
+    {
+        margin : auto;
+        width: 80%;
+        max-width : 900px;
+    }
+    .blocpdf a:hover
+    {
+        border : 3px solid #18565a;
+        box-shadow : 0px 3px 15px #18565a;
+    }
+}
+@media all and (max-width: 1199px) and (min-width: 820px){
+    #bgcompetences h1, #bgprojets h1, #bgexperience h1
+    {
+        margin : auto;
+        width: 80%;
+        max-width : 900px;
+    }
+    .blocpdf a:hover
+    {
+        border : 3px solid #18565a;
+        box-shadow : 0px 3px 15px #18565a;
+    }
+}
+@media all and (max-width: 819px) {
+    header
+    {
+        display : block;
+        text-align : center;
+        z-index : 0;
+    }
+    #photo {
+        margin-left : 0;
+    }
+    #bloc_page article
+    {
+        width : 80%;
+    }
+    h1
+    {
+        font-size : 3em;
+    }
+    #bgcompetences h1, #bgprojets h1, #bgexperience h1
+    {
+        margin : auto;
+        text-align : center;
+        max-width : 900px;
+    }
+}
+
+/* PDF */
+.blocpdf
+{
+    font-family : 'Trebuchet MS';
+	font-size : 1.55em;
+    font-weight : bold;
+}
+.blocpdf article
+{
+    margin-top : 15px;
+}
+.blocpdf p
+{
+    text-align : center;
+    margin : 0px;
+}
+.blocpdf img
+{
+    margin : 15px;
+}
+.blocpdf a
+{
+    color : white;
+    text-decoration : none;
+    padding : 15px;
+}
+
+/* Contact */
+
+#contact h1
+{
+    margin-bottom : 30px;
+}
+
+form
+{
+	max-width : 1000px;
+	margin : auto;
+    width : 80%;
+}
+
+input, textarea
+{
+    width : 100%;
+    padding : 7px;
+    background-color : #F3F3F3;
+    font-family: inherit;
+    font-size: inherit;
+    border: 0;
+    margin : 10px 0 10px 0;
+}
+
+textarea
+{
+    resize: vertical;
+}
+
+label
+{
+	display: block;
+	margin-right : 10px;
+	margin-top : 5px;
+}
+
+#envoyer
+{
+	background-color : #F3F3F3;
+	font-family : 'Trebuchet MS';
+	border : 2px solid #bdbdbd;
+	font-size : 17px;
+	color : #29768d;
+    margin-top : 10px;
+    width : 60%;
+    max-width : 200px;
+}
+
+#envoyer:hover
+{
+	cursor : pointer;
+	background-color : #dcdcdc;
+}
+
+#envoyer:active
+{
+	background-color : #bdbdbd;
+    border-color : #8c8c8c;
+}
+
+/* Flex */
+.flex
+{
+    display : flex;
+    flex-direction : row;
+    flex-wrap : wrap;
+}
+.flex.nowrap
+{
+    flex-wrap: nowrap;
+    align-items : center;
+}
+.flex div
+{
+    margin : 0 20px 0 20px;
+}
+.flex div p
+{
+    font-size : 1.1em;
+}
+.flex-reduced
+{
+    margin-left : 20px;
+}
+@media all and (max-width: 400px) {
+    .flex.nowrap
+    {
+        flex-wrap: wrap;
+    }
+    .flex-reduced
+    {
+        margin-left : 0;
+    }
+}
+
+.dropdown-contentTaquin
+{
+    display : none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index : 5;
+}
+.dropImg:hover
+{
+    cursor : pointer;
+}
+.show
+{
+    display : block;
+}
+
+/*
+*   STARS
+*/
+.star-group {
+    padding-right : 30px;
+    margin-left : 0 !important;
+}
+.star-title {
+    color : black;
+    position : relative;
+    top : -3px;
+    display : inline-block;
+    width : 70px;
+}
+.star-icon {
+    color: #c2bfbf;
+    font-size: 2em;
+    position: relative;
+}
+.star-icon.full:before {
+    text-shadow: 0 0 1px rgba(0,0,0,0.7);
+    color: #29768d;
+    content: '\2605'; /* Full star in UTF-8 */
+    position: absolute;
+    left: 0;
+}
+.star-icon.half:before {
+    text-shadow: 0 0 1px rgba(0,0,0,0.7);
+    color: #29768d;
+    content: '\2605'; /* Full star in UTF-8 */
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+}
+@-moz-document url-prefix() { /* Firefox Hack :( */
+  .star-icon {
+    font-size: 30px;
+    line-height: 20px;
+  }
+}
+
+/*
+*   PROJECTS
+*/
+.project {
+    margin-bottom : 40px;
+}
+.project-summary {
+    background-color: #29768d;
+    color : white;
+    position : relative;
+}
+.project-summary span {
+    position : absolute;
+    right : 20px;
+    top : 10px;
+}
+.project-summary:hover {
+    background-color: #3493af;
+    cursor : pointer;
+}
+.project-summary p {
+    display : inline-block;
+    margin : 10px 20px;
+}
+.flex.nowrap {
+    margin-top : 10px;
+}
+.project-studies h2 {
+  color : rgb(75, 75, 75);
+}
+.project-studies .project-summary {
+  background-color: rgb(75, 75, 75);
+}
+.legend-project-own {
+  color : #29768d;
+}
+.legend-project-studies {
+  color : rgb(55, 55, 55);
+}
+.legend-project-own, .legend-project-studies {
+  font-weight: 500;
+}
+
+/*
+*  COMPETENCES
+*/
+.lessknown {
+  opacity: 0.5;
+}
+
+.bordered-img {
+  padding : 5px;
+  padding-bottom: 2px;
+  margin-right : 10px;
+  background-color: #d2d2d2;
+  margin-bottom : 10px;
+}
